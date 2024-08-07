@@ -5,7 +5,6 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import pyautogui
 import pypyodbc as odbc
-from credential import *
 from datetime import datetime, timezone, timedelta
 import schedule
 import logging
@@ -27,6 +26,8 @@ logging.error('This is an error message')
 
 server = 'dice-sql.database.windows.net'
 database = 'dice_sql_database'
+username = 'iAmRoot'
+password = 'Qwerty@213'
 
 connectionString = f'Driver={{ODBC Driver 18 for SQL Server}};Server=tcp:{server},1433;Database={database};Uid={username};Pwd={password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'
 
@@ -34,10 +35,9 @@ def applyTheJobs():
     def fetchTheQueue(conn):
         cursor = conn.cursor()
         query = """
-            SELECT allData.id, applyQueue.selectedResume, applyQueue.timeOfArrival 
+            SELECT id, selectedResume, timeOfArrival 
             FROM applyQueue 
-            JOIN allData ON applyQueue.id = allData.id 
-            ORDER BY applyQueue.timeOfArrival ASC
+            ORDER BY timeOfArrival ASC
         """
         cursor.execute(query)
         rows = cursor.fetchall()
@@ -203,7 +203,7 @@ def applyTheJobs():
             except:
                 applyStatus = 'error'
             removeFromQueue(conn, jobID)
-            updateTheJob(conn, jobID, applyStatus)
+            # updateTheJob(conn, jobID, applyStatus)
         chromeApp.terminate()
 
     timeForNext = datetime.now() + timedelta(minutes = 10)
