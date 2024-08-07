@@ -24,7 +24,7 @@
 -- DROP TABLE scoreBoard;
 
 
-
+SELECT score FROM scoreBoard where contender = 'theMachine';
 
 -- QUERY TO SHOW ALL THE MYQUEUE DATA
 -- select allData.id, allData.title, applyQueue.timeOfArrival from allData JOIN applyQueue ON allData.id = applyQueue.id ORDER BY applyQueue.timeOfArrival ASC;
@@ -32,6 +32,11 @@
 
 -- INSERT INTO allData (id, title, location, company, description, datePosted, dateUpdated, myStatus, decisionTime)
 -- VALUES ('11111', 'this Is Title', 'location', 'company', 'description', 1721590526, 1721590528, 'pending', NULL);
+
+-- CREATE TABLE scoreBoard(
+--     contender VARCHAR(255) PRIMARY KEY,
+--     score INT    
+-- );
 
 -- INSERT INTO scoreBoard (contender, score)
 -- VALUES ('theMachine', 0);

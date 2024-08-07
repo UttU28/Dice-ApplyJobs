@@ -86,7 +86,8 @@ def applyTheJobs():
             query = """SELECT score FROM scoreBoard where contender = 'theMachine';"""
             cursor.execute(query)
             result = cursor.fetchall()
-            if not result or type(result[0][0]) != int: result = 0
+            print(result)
+            if (not result) or (type(result[0][0]) != int): result = 0
             else: result = result[0][0]
             conn.commit()
             cursor.close()
@@ -180,6 +181,8 @@ def applyTheJobs():
     thisCounter = 0
     jobQueue = fetchTheQueue(conn)
     resumeData = fetchResumeList(conn)
+
+    
     # print(jobQueue)
     if jobQueue:
         chrome_driver_path = 'C:/chromeDriver/chromedriver.exe'  # Ensure the path is correct
@@ -201,9 +204,7 @@ def applyTheJobs():
                 applyStatus = 'error'
             removeFromQueue(conn, jobID)
             updateTheJob(conn, jobID, applyStatus)
-
         chromeApp.terminate()
-        conn.close()
 
     timeForNext = datetime.now() + timedelta(minutes = 10)
     print(f"--------- {thisCounter} JOBS APPLIED")
@@ -212,11 +213,11 @@ def applyTheJobs():
     print("-"*40)
 
     prevScore = fetchTheScore(conn)
-    if thisCounter is not 0: setTheScore(conn, thisCounter + prevScore)
+    if thisCounter != 0: setTheScore(conn, thisCounter + prevScore)
     
     logging.info(f"--------- {thisCounter} + {prevScore} JOBS APPLIED")
     logging.info(f"--------- {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ||||| {timeForNext.strftime('%Y-%m-%d %H:%M:%S')}")
-    
+    conn.close()
 
 
 if __name__ == "__main__":
