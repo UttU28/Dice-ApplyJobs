@@ -342,3 +342,588 @@
 2024-08-06 21:44:42,724 | INFO | This is an info message
 2024-08-06 21:44:42,724 | WARNING | This is a warning message
 2024-08-06 21:44:42,724 | ERROR | This is an error message
+2024-08-13 13:06:28,589 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723368698677257989'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'c329c591-599e-11ef-a9c4-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 13:06:29,050 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '65783'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Sun, 11 Aug 2024 09:31:39 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCB9E8672AF0F1"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '6bf9c209-901e-0010-67ab-ed5593000000'
+    'x-ms-client-request-id': 'c329c591-599e-11ef-a9c4-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Tue, 13 Aug 2024 18:06:30 GMT'
+2024-08-13 13:06:29,159 | INFO | Blob 1723368698677257989 downloaded to assets/sdv.pdf
+2024-08-13 13:08:44,925 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723368698677257989'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '146ed3c5-599f-11ef-b52e-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 13:08:45,364 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '65783'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Sun, 11 Aug 2024 09:31:39 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCB9E8672AF0F1"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '04911c1f-201e-003a-4cab-ed8a83000000'
+    'x-ms-client-request-id': '146ed3c5-599f-11ef-b52e-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Tue, 13 Aug 2024 18:08:46 GMT'
+2024-08-13 15:33:43,201 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723493740408406275'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '550230d5-59b3-11ef-bda9-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 15:33:43,571 | INFO | Response status: 404
+Response headers:
+    'Content-Length': '215'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '13e0595e-001e-004f-0ec0-ede1af000000'
+    'x-ms-client-request-id': '550230d5-59b3-11ef-bda9-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'BlobNotFound'
+    'Date': 'Tue, 13 Aug 2024 20:33:44 GMT'
+2024-08-13 15:33:43,577 | ERROR | Error downloading blob: The specified blob does not exist.
+RequestId:13e0595e-001e-004f-0ec0-ede1af000000
+Time:2024-08-13T20:33:45.2141090Z
+ErrorCode:BlobNotFound
+Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:13e0595e-001e-004f-0ec0-ede1af000000
+Time:2024-08-13T20:33:45.2141090Z</Message></Error>
+2024-08-13 15:33:43,582 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723493740408406345'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '553c71bc-59b3-11ef-96d5-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 15:33:43,949 | INFO | Response status: 404
+Response headers:
+    'Content-Length': '215'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '4e7ab0e9-f01e-005b-4ac0-eda9c0000000'
+    'x-ms-client-request-id': '553c71bc-59b3-11ef-96d5-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'BlobNotFound'
+    'Date': 'Tue, 13 Aug 2024 20:33:44 GMT'
+2024-08-13 15:33:43,950 | ERROR | Error downloading blob: The specified blob does not exist.
+RequestId:4e7ab0e9-f01e-005b-4ac0-eda9c0000000
+Time:2024-08-13T20:33:45.5933552Z
+ErrorCode:BlobNotFound
+Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:4e7ab0e9-f01e-005b-4ac0-eda9c0000000
+Time:2024-08-13T20:33:45.5933552Z</Message></Error>
+2024-08-13 15:33:43,954 | ERROR | Error downloading blob: [Errno 2] No such file or directory: 'assets/utsavmaan28_at_gmail_dot_com/ML-DevOps Utsav Chaudhary Resume.pdf'
+2024-08-13 15:33:43,956 | ERROR | Error downloading blob: [Errno 2] No such file or directory: 'assets/utsavmaan28_at_gmail_dot_com/2023-fall-project0.pdf'
+2024-08-13 15:33:43,957 | ERROR | Error downloading blob: [Errno 2] No such file or directory: 'assets/utsavmaan28_at_gmail_dot_com/Utsav_Chaudhary_Resume.pdf'
+2024-08-13 15:38:43,358 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723493740408406275'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '07eab1da-59b4-11ef-86b1-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 15:38:43,744 | INFO | Response status: 404
+Response headers:
+    'Content-Length': '215'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '35088e6e-a01e-0056-3cc0-ed6114000000'
+    'x-ms-client-request-id': '07eab1da-59b4-11ef-86b1-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'BlobNotFound'
+    'Date': 'Tue, 13 Aug 2024 20:38:45 GMT'
+2024-08-13 15:38:43,747 | ERROR | Error downloading blob: The specified blob does not exist.
+RequestId:35088e6e-a01e-0056-3cc0-ed6114000000
+Time:2024-08-13T20:38:45.3977999Z
+ErrorCode:BlobNotFound
+Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:35088e6e-a01e-0056-3cc0-ed6114000000
+Time:2024-08-13T20:38:45.3977999Z</Message></Error>
+2024-08-13 15:38:43,752 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723493740408406345'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '0826ef36-59b4-11ef-b995-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 15:38:44,163 | INFO | Response status: 404
+Response headers:
+    'Content-Length': '215'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '7da6d0ed-f01e-0039-13c0-ed6be7000000'
+    'x-ms-client-request-id': '0826ef36-59b4-11ef-b995-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'BlobNotFound'
+    'Date': 'Tue, 13 Aug 2024 20:38:45 GMT'
+2024-08-13 15:38:44,164 | ERROR | Error downloading blob: The specified blob does not exist.
+RequestId:7da6d0ed-f01e-0039-13c0-ed6be7000000
+Time:2024-08-13T20:38:45.8143657Z
+ErrorCode:BlobNotFound
+Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:7da6d0ed-f01e-0039-13c0-ed6be7000000
+Time:2024-08-13T20:38:45.8143657Z</Message></Error>
+2024-08-13 15:38:44,167 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723368698677257989'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '08663997-59b4-11ef-b78a-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 15:38:44,506 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '65783'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Sun, 11 Aug 2024 09:31:39 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCB9E8672AF0F1"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '6c903cf5-901e-0010-5dc0-ed5593000000'
+    'x-ms-client-request-id': '08663997-59b4-11ef-b78a-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Tue, 13 Aug 2024 20:38:45 GMT'
+2024-08-13 15:38:44,612 | INFO | Blob 1723368698677257989 downloaded to assets/utsavmaan28_at_gmail_dot_com/Utsav_Chaudhary_Resume.pdf
+2024-08-13 15:38:44,617 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723372899884173600'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '08aac880-59b4-11ef-a088-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 15:38:44,999 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '108352'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Sun, 11 Aug 2024 10:41:40 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCB9F22F5F4838"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '0526bde5-201e-003a-35c0-ed8a83000000'
+    'x-ms-client-request-id': '08aac880-59b4-11ef-a088-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Tue, 13 Aug 2024 20:38:46 GMT'
+2024-08-13 15:38:45,160 | INFO | Blob 1723372899884173600 downloaded to assets/utsavmaan28_at_gmail_dot_com/Python Utsav Chaudhary Resume.pdf
+2024-08-13 15:38:45,169 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723407715878586744'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '08fed768-59b4-11ef-821d-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 15:38:45,570 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '84568'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Sun, 11 Aug 2024 20:21:55 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCBA433E97C2B5"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3730eb07-901e-0072-21c0-ed97b4000000'
+    'x-ms-client-request-id': '08fed768-59b4-11ef-821d-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Tue, 13 Aug 2024 20:38:46 GMT'
+2024-08-13 15:38:45,712 | INFO | Blob 1723407715878586744 downloaded to assets/utsavmaan28_at_gmail_dot_com/2023-fall-project0.pdf
+2024-08-13 15:38:45,720 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723493740408406344'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '095301fb-59b4-11ef-9907-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 15:38:46,070 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '150705'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 12 Aug 2024 20:15:40 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCBB0B896E5A61"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '9e621e46-a01e-0024-4fc0-ed665b000000'
+    'x-ms-client-request-id': '095301fb-59b4-11ef-9907-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Tue, 13 Aug 2024 20:38:46 GMT'
+2024-08-13 15:38:46,266 | INFO | Blob 1723493740408406344 downloaded to assets/utsavmaan28_at_gmail_dot_com/ML-DevOps Utsav Chaudhary Resume.pdf
+2024-08-13 15:58:12,204 | ERROR | Error connecting to database: ('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Timeout error [258]. ')
+2024-08-13 15:58:12,205 | ERROR | Error fetching queue: 'NoneType' object has no attribute 'cursor'
+2024-08-13 15:58:12,205 | ERROR | Error fetching resume list: 'NoneType' object has no attribute 'cursor'
+2024-08-13 15:58:40,128 | ERROR | Error connecting to database: ('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Timeout error [258]. ')
+2024-08-13 15:58:40,128 | ERROR | Error fetching queue: 'NoneType' object has no attribute 'cursor'
+2024-08-13 15:58:40,129 | ERROR | Error fetching resume list: 'NoneType' object has no attribute 'cursor'
+2024-08-13 16:03:21,944 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723493740408406275'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '7938dd5f-59b7-11ef-b00c-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 16:03:22,319 | INFO | Response status: 404
+Response headers:
+    'Content-Length': '215'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '34ab5195-d01e-0063-48c4-ed0d00000000'
+    'x-ms-client-request-id': '7938dd5f-59b7-11ef-b00c-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'BlobNotFound'
+    'Date': 'Tue, 13 Aug 2024 21:03:23 GMT'
+2024-08-13 16:03:22,324 | ERROR | Error downloading blob: The specified blob does not exist.
+RequestId:34ab5195-d01e-0063-48c4-ed0d00000000
+Time:2024-08-13T21:03:24.0273144Z
+ErrorCode:BlobNotFound
+Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:34ab5195-d01e-0063-48c4-ed0d00000000
+Time:2024-08-13T21:03:24.0273144Z</Message></Error>
+2024-08-13 16:03:22,327 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723493740408406345'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '79738298-59b7-11ef-9078-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 16:03:22,630 | INFO | Response status: 404
+Response headers:
+    'Content-Length': '215'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'b6f98db8-801e-006e-78c4-edc5d4000000'
+    'x-ms-client-request-id': '79738298-59b7-11ef-9078-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'BlobNotFound'
+    'Date': 'Tue, 13 Aug 2024 21:03:23 GMT'
+2024-08-13 16:03:22,630 | ERROR | Error downloading blob: The specified blob does not exist.
+RequestId:b6f98db8-801e-006e-78c4-edc5d4000000
+Time:2024-08-13T21:03:24.3433229Z
+ErrorCode:BlobNotFound
+Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.
+RequestId:b6f98db8-801e-006e-78c4-edc5d4000000
+Time:2024-08-13T21:03:24.3433229Z</Message></Error>
+2024-08-13 16:03:22,634 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723368698677257989'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '79a24d6a-59b7-11ef-a018-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 16:03:23,033 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '65783'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Sun, 11 Aug 2024 09:31:39 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCB9E8672AF0F1"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '47d41779-d01e-003e-41c4-ed0784000000'
+    'x-ms-client-request-id': '79a24d6a-59b7-11ef-a018-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Tue, 13 Aug 2024 21:03:24 GMT'
+2024-08-13 16:03:23,159 | INFO | Blob 1723368698677257989 downloaded to assets/utsavmaan28_at_gmail_dot_com/Utsav_Chaudhary_Resume.pdf
+2024-08-13 16:03:23,166 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723372899884173600'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '79f3535f-59b7-11ef-a33b-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 16:03:23,540 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '108352'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Sun, 11 Aug 2024 10:41:40 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCB9F22F5F4838"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'cb01b354-701e-0045-64c4-ed4518000000'
+    'x-ms-client-request-id': '79f3535f-59b7-11ef-a33b-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Tue, 13 Aug 2024 21:03:24 GMT'
+2024-08-13 16:03:23,678 | INFO | Blob 1723372899884173600 downloaded to assets/utsavmaan28_at_gmail_dot_com/Python Utsav Chaudhary Resume.pdf
+2024-08-13 16:03:23,685 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723407715878586744'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '7a42a608-59b7-11ef-aca9-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 16:03:24,052 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '84568'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Sun, 11 Aug 2024 20:21:55 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCBA433E97C2B5"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'f809c4af-101e-0021-09c4-edb480000000'
+    'x-ms-client-request-id': '7a42a608-59b7-11ef-aca9-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Tue, 13 Aug 2024 21:03:25 GMT'
+2024-08-13 16:03:24,155 | INFO | Blob 1723407715878586744 downloaded to assets/utsavmaan28_at_gmail_dot_com/2023-fall-project0.pdf
+2024-08-13 16:03:24,160 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723493740408406344'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '7a8b2acf-59b7-11ef-b24e-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 16:03:24,508 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '150705'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Mon, 12 Aug 2024 20:15:40 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCBB0B896E5A61"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '03f3b209-601e-0004-7ac4-ed1dfc000000'
+    'x-ms-client-request-id': '7a8b2acf-59b7-11ef-b24e-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Tue, 13 Aug 2024 21:03:26 GMT'
+2024-08-13 16:03:24,661 | INFO | Blob 1723493740408406344 downloaded to assets/utsavmaan28_at_gmail_dot_com/ML-DevOps Utsav Chaudhary Resume.pdf
+2024-08-13 17:46:41,021 | ERROR | Error connecting to database: ('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Timeout error [258]. ')
+2024-08-13 17:46:41,022 | ERROR | Error fetching queue: 'NoneType' object has no attribute 'cursor'
+2024-08-13 17:46:41,022 | ERROR | Error fetching resume list: 'NoneType' object has no attribute 'cursor'
+2024-08-13 17:46:57,389 | ERROR | Error connecting to database: ('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: Timeout error [258]. ')
+2024-08-13 17:46:57,389 | ERROR | Error fetching queue: 'NoneType' object has no attribute 'cursor'
+2024-08-13 17:46:57,389 | ERROR | Error fetching resume list: 'NoneType' object has no attribute 'cursor'
+2024-08-13 17:58:25,552 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723586578999306174'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '8c17e148-59c7-11ef-9dd6-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 17:58:25,931 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '147274'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Tue, 13 Aug 2024 22:03:01 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCBBE3B2FAA99F"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'a89d5a20-801e-0051-46d4-ed0d77000000'
+    'x-ms-client-request-id': '8c17e148-59c7-11ef-9dd6-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Tue, 13 Aug 2024 22:58:25 GMT'
+2024-08-13 17:58:26,105 | INFO | Blob 1723586578999306174 downloaded to assets/utsav28_dot_devops_at_gmail_dot_com/AWS Utsav Chaudhary Resume.docx.pdf
+2024-08-13 17:58:26,113 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723586585506819698'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '8c6d71bb-59c7-11ef-88e6-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 17:58:26,427 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '145247'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Tue, 13 Aug 2024 22:03:07 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCBBE3B6CE4224"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '8ccbdd17-e01e-0035-17d4-edfcef000000'
+    'x-ms-client-request-id': '8c6d71bb-59c7-11ef-88e6-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Tue, 13 Aug 2024 22:58:26 GMT'
+2024-08-13 17:58:26,598 | INFO | Blob 1723586585506819698 downloaded to assets/utsav28_dot_devops_at_gmail_dot_com/GCP Utsav Chaudhary Resume.pdf
+2024-08-13 17:58:26,603 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723586591906099998'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.22621-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '8cb8785f-59c7-11ef-b142-9488adbbd079'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 17:58:26,958 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '146071'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Tue, 13 Aug 2024 22:03:14 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCBBE3BA9C6273"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'b2f5ac4f-f01e-004b-42d4-ed6ca8000000'
+    'x-ms-client-request-id': '8cb8785f-59c7-11ef-b142-9488adbbd079'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Tue, 13 Aug 2024 22:58:26 GMT'
+2024-08-13 17:58:27,123 | INFO | Blob 1723586591906099998 downloaded to assets/utsav28_dot_devops_at_gmail_dot_com/Azure Utsav Chaudhary Resume.pdf

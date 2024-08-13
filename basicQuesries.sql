@@ -1,8 +1,9 @@
 -- select * from allData;
 -- select * from myQueue;
--- select * from applyQueue;
+select * from applyQueue;
+-- insert into resumeList (resumeId, resumeName, email)
+-- VALUES ('1723493740408406275', 'Python Amit Resume', 'aluhar@gmail.com')
 -- select * from resumeList;
-
 -- select COUNT(*) from allData;
 -- select COUNT(*) from myQueue;
 -- select COUNT(*) from applyQueue;
@@ -24,7 +25,7 @@
 -- DROP TABLE scoreBoard;
 
 
-SELECT score FROM scoreBoard where contender = 'theMachine';
+-- SELECT score FROM scoreBoard where contender = 'theMachine';
 
 -- QUERY TO SHOW ALL THE MYQUEUE DATA
 -- select allData.id, allData.title, applyQueue.timeOfArrival from allData JOIN applyQueue ON allData.id = applyQueue.id ORDER BY applyQueue.timeOfArrival ASC;
@@ -41,5 +42,5 @@ SELECT score FROM scoreBoard where contender = 'theMachine';
 -- INSERT INTO scoreBoard (contender, score)
 -- VALUES ('theMachine', 0);
 
-SELECT * FROM scoreBoard;
+-- SELECT * FROM scoreBoard;
 -- SELECT score FROM scoreBoard where contender = 'theMachine';
