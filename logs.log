@@ -1121,3 +1121,132 @@ Response headers:
     'x-ms-server-encrypted': 'REDACTED'
     'Date': 'Wed, 14 Aug 2024 01:33:21 GMT'
 2024-08-13 20:33:22,276 | INFO | Blob 1723586591906099998 downloaded to assets/utsav28_dot_devops_at_gmail_dot_com/Azure Utsav Chaudhary Resume.pdf
+2024-08-13 22:36:49,708 | ERROR | Error fetching queue: ('42S22', "[42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'id'.")
+2024-08-13 22:37:34,793 | ERROR | Error fetching queue: ('42S22', "[42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'id'.")
+2024-08-13 22:38:09,496 | ERROR | Error fetching queue: ('42S22', "[42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'id'.")
+2024-08-13 22:38:41,064 | ERROR | Error fetching queue: ('42S22', "[42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'id'.")
+2024-08-13 22:41:57,654 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723603544029857920'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.19041-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2818cfbc-59ef-11ef-806b-b8ca3a95eab0'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 22:41:57,989 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '84568'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Wed, 14 Aug 2024 02:45:44 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCBC0B317E9BA5"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '044d223f-001e-005f-06fb-ed24c7000000'
+    'x-ms-client-request-id': '2818cfbc-59ef-11ef-806b-b8ca3a95eab0'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Wed, 14 Aug 2024 03:41:58 GMT'
+2024-08-13 22:41:58,100 | INFO | Blob 1723603544029857920 downloaded to assets/keerthanat190_at_gmail_dot_com/2023-fall-project0.pdf
+2024-08-13 22:42:07,666 | ERROR | Apply Button not FOUND for 0fb0c526-f5b6-4266-bdec-f768e34392f4
+2024-08-13 22:48:24,167 | ERROR | Apply Button not FOUND for 0fb0c526-f5b6-4266-bdec-f768e34392f4
+2024-08-13 22:50:15,511 | ERROR | Apply Button not FOUND for 0fb0c526-f5b6-4266-bdec-f768e34392f4
+2024-08-13 22:50:15,549 | ERROR | Error removing job from queue: ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Unclosed quotation mark after the character string 'utsav28.devops@gmail.com'.")
+2024-08-13 22:52:54,043 | ERROR | Error removing job from queue: ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Unclosed quotation mark after the character string 'utsav28.devops@gmail.com'.")
+2024-08-13 22:53:10,632 | ERROR | Apply Button not FOUND for 0fb0c526-f5b6-4266-bdec-f768e34392f4
+2024-08-13 22:53:10,687 | ERROR | Error removing job from queue: ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Unclosed quotation mark after the character string 'keerthanat190@gmail.com'.")
+2024-08-13 22:53:12,842 | INFO | Score updated to 1.
+2024-08-13 22:53:12,843 | INFO | --------- 1 + 0 JOBS APPLIED
+2024-08-13 22:53:12,843 | INFO | --------- 2024-08-13 22:53:12 ||||| 2024-08-13 23:03:12
+2024-08-13 22:54:03,167 | ERROR | Apply Button not FOUND for 0fb0c526-f5b6-4266-bdec-f768e34392f4
+2024-08-13 22:54:03,212 | ERROR | Error removing job from queue: ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Unclosed quotation mark after the character string 'utsav28.devops@gmail.com'.")
+2024-08-13 22:54:18,886 | ERROR | Apply Button not FOUND for 0fb0c526-f5b6-4266-bdec-f768e34392f4
+2024-08-13 22:54:18,930 | ERROR | Error removing job from queue: ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Unclosed quotation mark after the character string 'keerthanat190@gmail.com'.")
+2024-08-13 22:54:20,986 | INFO | --------- 0 + 0 JOBS APPLIED
+2024-08-13 22:54:20,986 | INFO | --------- 2024-08-13 22:54:20 ||||| 2024-08-13 23:04:20
+2024-08-13 22:55:25,334 | ERROR | Error removing job from queue: ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Unclosed quotation mark after the character string 'keerthanat190@gmail.com'.")
+2024-08-13 22:55:27,480 | INFO | Score updated to 1.
+2024-08-13 22:55:27,480 | INFO | --------- 1 + 0 JOBS APPLIED
+2024-08-13 22:55:27,480 | INFO | --------- 2024-08-13 22:55:27 ||||| 2024-08-13 23:05:27
+2024-08-13 23:03:03,394 | ERROR | Apply Button not FOUND for 0fb0c526-f5b6-4266-bdec-f768e34392f4
+2024-08-13 23:03:03,505 | INFO | Job 0fb0c526-f5b6-4266-bdec-f768e34392f4 removed from apply queue.
+2024-08-13 23:03:40,394 | INFO | Job b5a3ad6b-32fd-4403-ba09-99db5bf03626 removed from apply queue.
+2024-08-13 23:03:47,322 | ERROR | Apply Button not FOUND for b5a3ad6b-32fd-4403-ba09-99db5bf03626
+2024-08-13 23:03:47,432 | INFO | Job b5a3ad6b-32fd-4403-ba09-99db5bf03626 removed from apply queue.
+2024-08-13 23:04:13,537 | INFO | Job 9cc545ad-96b2-42c2-b225-7bf00769b064 removed from apply queue.
+2024-08-13 23:04:15,694 | INFO | Score updated to 2.
+2024-08-13 23:04:15,694 | INFO | --------- 2 + 0 JOBS APPLIED
+2024-08-13 23:04:15,695 | INFO | --------- 2024-08-13 23:04:15 ||||| 2024-08-13 23:14:15
+2024-08-14 10:32:33,517 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723649450709869672'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.19041-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '6d0d2529-5a52-11ef-a598-b8ca3a95eab0'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-14 10:32:33,803 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '150456'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Wed, 14 Aug 2024 15:30:50 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCBC7614029629"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'f0e31c5a-501e-000f-245f-eee697000000'
+    'x-ms-client-request-id': '6d0d2529-5a52-11ef-a598-b8ca3a95eab0'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Wed, 14 Aug 2024 15:32:36 GMT'
+2024-08-14 10:32:33,947 | INFO | Blob 1723649450709869672 downloaded to assets/utsav28_dot_devops_at_gmail_dot_com/Utsav Chaudhary Resume.pdf
+2024-08-14 10:32:33,951 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723649467858186752'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.19041-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '6d4f5438-5a52-11ef-8c52-b8ca3a95eab0'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-14 10:32:34,244 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '150705'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Wed, 14 Aug 2024 15:31:07 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCBC761E3AF98A"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'c6e26dd6-101e-001e-5b5f-ee7c23000000'
+    'x-ms-client-request-id': '6d4f5438-5a52-11ef-8c52-b8ca3a95eab0'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Wed, 14 Aug 2024 15:32:36 GMT'
+2024-08-14 10:32:34,410 | INFO | Blob 1723649467858186752 downloaded to assets/utsav28_dot_devops_at_gmail_dot_com/ML-DevOps Utsav Chaudhary Resume.pdf
+2024-08-14 10:32:46,929 | ERROR | Apply Button not FOUND for 3833a969-f17c-412c-9a80-20ff353add6e
+2024-08-14 10:32:47,027 | INFO | Job 3833a969-f17c-412c-9a80-20ff353add6e removed from apply queue.
+2024-08-14 10:32:52,841 | INFO | Job a517d782-bf8c-405c-b42f-2a10bcad0bf6 removed from apply queue.

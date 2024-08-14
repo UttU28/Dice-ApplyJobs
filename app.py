@@ -51,7 +51,7 @@ def apply_the_jobs():
                     logging.error(f"Error applying for job {userEmail} - {jobID}: {e}")
                     apply_status = 'error'
                 finally:
-                    remove_from_queue(conn, jobID)
+                    remove_from_queue(conn, jobID, userEmail)
                     # update_the_job(conn, jobID, apply_status)
             
             chrome_app.terminate()
@@ -85,7 +85,7 @@ def apply_dice(jobID, selectedResume, userDir, thisDriver):
         sleep(0.8)
         pyautogui.hotkey('ctrl', 'l')
         sleep(0.8)
-        pyautogui.typewrite(f'C:/Users/utsav/OneDrive/Desktop/Dice-ApplyJobs/assets/{userDir}/{selectedResume}')
+        pyautogui.typewrite(f'C:/Users/utsav/Desktop/Dice-ApplyJobs/assets/{userDir}/')
         sleep(0.8)
         pyautogui.press('enter')
         sleep(0.8)
@@ -126,9 +126,9 @@ if __name__ == "__main__":
     # )
     # print(2)
     apply_the_jobs()
-    # schedule.every(15).minutes.do(apply_the_jobs)
+    schedule.every(15).minutes.do(apply_the_jobs)
     
-    # while True:
-    #     schedule.run_pending()
-    #     time.sleep(1)
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
 

@@ -21,7 +21,7 @@ def connect_to_database():
 def fetch_the_queue(conn):
     try:
         cursor = conn.cursor()
-        query = "SELECT id, email, selectedResume, timeOfArrival FROM applyQueue ORDER BY timeOfArrival ASC"
+        query = "SELECT jobID, email, selectedResume, timeOfArrival FROM applyQueue ORDER BY timeOfArrival ASC"
         cursor.execute(query)
         rows = cursor.fetchall()
         job_queue = [{'id': row[0], 'email': row[1], 'selectedResume': row[2], 'timeOfArrival': str(row[3])} for row in rows]
@@ -33,7 +33,7 @@ def fetch_the_queue(conn):
 def remove_from_queue(conn, job_id, email):
     try:
         cursor = conn.cursor()
-        query = f"DELETE FROM applyQueue WHERE id = '{job_id}' AND email = '{email}"
+        query = f"DELETE FROM applyQueue WHERE jobID = '{job_id}' AND email = '{email}'"
         cursor.execute(query)
         conn.commit()
         cursor.close()

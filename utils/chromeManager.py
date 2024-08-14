@@ -102,4 +102,4 @@ def checkIfChromeProfile(ofThis):
 
         thisChromeApp.terminate()
 
-    createProfile(ofThis)
+        createProfile(ofThis)
