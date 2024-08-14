@@ -1,7 +1,16 @@
 -- select * from allData;
 -- select * from myQueue;
 -- select * from users;
+-- select * from allData;
 select * from applyQueue;
+
+-- DECLARE @currentUnixTimestamp BIGINT;
+-- SET @currentUnixTimestamp = DATEDIFF(SECOND, '1970-01-01T00:00:00Z', GETUTCDATE());
+-- DECLARE @timestamp24HoursAgo BIGINT;
+-- SET @timestamp24HoursAgo = @currentUnixTimestamp - (5 * 60 * 60);
+-- DELETE FROM allData
+-- WHERE dateUpdated < @timestamp24HoursAgo;
+
 -- delete from applyQueue where email = 'utsav28.devops@gmail.com'
 -- SELECT dice_password FROM users WHERE email = 'utsav28.devops@gmail.com';
 -- insert into resumeList (resumeId, resumeName, email)

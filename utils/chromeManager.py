@@ -9,7 +9,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
-from utils.selenium_utils import initialize_chrome_driver
+from utils.selenium_utils import *
 from utils.database_utils import *  # Assuming this is where database functions are imported
 from config.config import CHROME_DRIVER_PATH, CHROME_OPTIONS
 
@@ -42,15 +42,56 @@ def cleanTheDamnJobQueue(onThisData):
         result[email].append([job_id, resume])
     return result
 
-def createProfile(ofThis):
-    profile_path = f'{profileRootDir}/{getDirName(ofThis)}'
+def checkAndLoginToDice(email, thisDriver):
+    profileChecking = "https://www.dice.com/dashboard/login?redirectURL=/dashboard/profiles" 
+    thisDriver.get(profileChecking)
+    thisDriver.get('chrome://settings/')
+    thisDriver.execute_script('chrome.settingsPrivate.setDefaultZoom(0.75);')
+    sleep(1)
+    # thisDriver.execute_script("document.body.style.zoom='75%';")
+    print(thisDriver.current_url)
+    if thisDriver.current_url == profileChecking:
+        # Initialize User Login
+        sleep(2)
+        dicePassword = fetchDiceCreds(email)
+        pyautogui.typewrite(email)
+        sleep(0.5)
+        pyautogui.press('enter')
+        sleep(2)
+        pyautogui.typewrite(dicePassword)
+        sleep(0.5)
+        pyautogui.press('enter')
+        sleep(1)
+        # clickTheDamnButton('savePassword', 2)
+        sleep(1)
+        thisDriver.get("https://www.dice.com/dashboard/jobs")
+        sleep(2)
+        thisDriver.get("https://www.dice.com/jobs")
+    sleep(2)
 
-    chrome_app = subprocess.Popen([
+def startChromeProcess(ofThis):
+    profile_path = f'{profileRootDir}/{getDirName(ofThis)}'
+    chromeApp = subprocess.Popen([
         'C:/Program Files/Google/Chrome/Application/chrome.exe',
         '--remote-debugging-port=9002',
         f'--user-data-dir={profile_path}',
         '--start-maximized'
     ])
+    return chromeApp
+
+def killChromeProcess(chromeApp):
+    try:
+        chromeApp.terminate()
+        chromeApp.wait()
+        if chromeApp.poll() is None:  # Process is still running
+            chromeApp.kill()
+        chromeApp.wait()
+    except:
+        pass
+
+
+def addDiceProfileToChrome(ofThis):
+    chromeApp = startChromeProcess(ofThis)
     sleep(2)
     loginDriver = initialize_chrome_driver(CHROME_DRIVER_PATH, CHROME_OPTIONS)
     sleep(4)
@@ -59,37 +100,15 @@ def createProfile(ofThis):
         pyautogui.press('tab')
         sleep(0.5)
     pyautogui.press('enter')
+    sleep(0.5)
     pyautogui.typewrite('https://www.dice.com/')
     sleep(1)
     pyautogui.press('enter')
     sleep(2)
 
-    profileChecking = "https://www.dice.com/dashboard/login?redirectURL=/dashboard/profiles" 
+    checkAndLoginToDice(ofThis, loginDriver)
 
-    loginDriver.get(profileChecking)
-    sleep(1)
-    print(loginDriver.current_url)
-    exit()
-    if loginDriver.current_url == profileChecking:
-
-    # loginDriver.get('https://www.dice.com/dashboard/login')
-    sleep(2)
-
-    dicePassword = fetchDiceCreds(ofThis)
-
-    pyautogui.typewrite(ofThis)
-    sleep(0.5)
-    pyautogui.press('enter')
-
-    sleep(2)
-
-    pyautogui.typewrite(dicePassword)
-    sleep(0.5)
-    pyautogui.press('enter')
-
-    sleep(9)
-
-    chrome_app.terminate()
+    killChromeProcess(chromeApp)
     loginDriver.quit()
 
 def checkIfChromeProfile(ofThis):
@@ -110,4 +129,4 @@ def checkIfChromeProfile(ofThis):
 
         thisChromeApp.terminate()
 
-        createProfile(ofThis)
+        addDiceProfileToChrome(ofThis)
