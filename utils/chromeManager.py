@@ -44,9 +44,12 @@ def cleanTheDamnJobQueue(onThisData):
 
 def checkAndLoginToDice(email, thisDriver):
     profileChecking = "https://www.dice.com/dashboard/login?redirectURL=/dashboard/profiles" 
+    sleep(1)
     thisDriver.get(profileChecking)
-    thisDriver.get('chrome://settings/')
-    thisDriver.execute_script('chrome.settingsPrivate.setDefaultZoom(0.75);')
+    
+    for i in range(3):
+        pyautogui.press('esc')
+        sleep(0.2)
     sleep(1)
     # thisDriver.execute_script("document.body.style.zoom='75%';")
     print(thisDriver.current_url)
@@ -68,6 +71,8 @@ def checkAndLoginToDice(email, thisDriver):
         sleep(2)
         thisDriver.get("https://www.dice.com/jobs")
     sleep(2)
+    thisDriver.get('chrome://settings/')
+    thisDriver.execute_script('chrome.settingsPrivate.setDefaultZoom(0.75);')
 
 def startChromeProcess(ofThis):
     profile_path = f'{profileRootDir}/{getDirName(ofThis)}'

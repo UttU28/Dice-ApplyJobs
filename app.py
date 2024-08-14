@@ -22,13 +22,13 @@ def apply_the_jobs():
     
     thisCounter = 0
     jobQueue = fetch_the_queue(conn)
-    print(jobQueue)
-    if jobQueue != [] or jobQueue != None:
+    if jobQueue:
         resumeData = fetch_resume_list(conn)
         cleanedJobQueue = cleanTheDamnJobQueue(jobQueue)
         compareBoth(resumeData)
 
         for userEmail, userApplyQueue in cleanedJobQueue.items():
+            if userEmail == "utsav28.devops@gmail.com": continue
             if userApplyQueue:
                 chromeApp = startChromeProcess(userEmail)
                 time.sleep(2)
@@ -77,8 +77,10 @@ def apply_dice(jobID, selectedResume, userDir, thisDriver):
 
     sleep(5)
     try:
-        clickTheDamnButton('apply', 2)
-        clickTheDamnButton('replaceResume', 2)
+        try: clickTheDamnButton('apply', 2)
+        except: print(1)
+        try: clickTheDamnButton('replaceResume', 2)
+        except: print(2)
 
         pyautogui.click()
         sleep(0.8)
@@ -125,7 +127,7 @@ if __name__ == "__main__":
     # )
     # print(2)
     apply_the_jobs()
-    schedule.every(5).minutes.do(apply_the_jobs)
+    schedule.every(1).minutes.do(apply_the_jobs)
     
     while True:
         schedule.run_pending()

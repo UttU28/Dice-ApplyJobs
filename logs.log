@@ -93,3 +93,96 @@ Response headers:
 2024-08-14 13:02:51,543 | INFO | --------- 0 + 0 JOBS APPLIED
 2024-08-14 13:02:51,543 | INFO | --------- 2024-08-14 13:02:51 ||||| 2024-08-14 13:12:51
 2024-08-14 14:41:55,143 | INFO | Job bca5159a-3671-480c-9e02-6809050a701b removed from apply queue.
+2024-08-14 15:00:51,676 | ERROR | Apply Button not FOUND for 246b456b-2d82-4dbd-8188-bc53c35c916a
+2024-08-14 15:00:51,802 | INFO | Job 246b456b-2d82-4dbd-8188-bc53c35c916a removed from apply queue.
+2024-08-14 15:01:00,039 | ERROR | Apply Button not FOUND for 842f26be-ed93-4857-bb1e-e902a53108e9
+2024-08-14 15:01:00,153 | INFO | Job 842f26be-ed93-4857-bb1e-e902a53108e9 removed from apply queue.
+2024-08-14 15:01:04,946 | INFO | Job c96700bb-3cf2-411a-aee6-e67809dda239 removed from apply queue.
+2024-08-14 15:01:41,045 | INFO | Job 763ee0d8-1116-481b-9a1d-2417c84c9921 removed from apply queue.
+2024-08-14 15:07:02,154 | INFO | Job 3cf0dba2-482b-4972-897c-2577efedd7e6 removed from apply queue.
+2024-08-14 15:09:18,099 | ERROR | Apply Button not FOUND for 952c89fd-18a7-4edd-b94b-230353f48474
+2024-08-14 15:09:18,193 | INFO | Job 952c89fd-18a7-4edd-b94b-230353f48474 removed from apply queue.
+2024-08-14 15:09:20,325 | INFO | --------- 0 + 0 JOBS APPLIED
+2024-08-14 15:09:20,325 | INFO | --------- 2024-08-14 15:09:20 ||||| 2024-08-14 15:19:20
+2024-08-14 15:15:03,023 | INFO | Job 842f26be-ed93-4857-bb1e-e902a53108e9 removed from apply queue.
+2024-08-14 15:15:29,123 | INFO | Job 246b456b-2d82-4dbd-8188-bc53c35c916a removed from apply queue.
+2024-08-14 15:15:31,325 | INFO | Score updated to 2.
+2024-08-14 15:15:31,325 | INFO | --------- 2 + 0 JOBS APPLIED
+2024-08-14 15:15:31,325 | INFO | --------- 2024-08-14 15:15:31 ||||| 2024-08-14 15:25:31
+2024-08-14 15:21:14,997 | INFO | Job 67d38af2-0bac-447f-8c36-f5671660e2e2 removed from apply queue.
+2024-08-14 15:21:17,216 | INFO | Score updated to 1.
+2024-08-14 15:21:17,216 | INFO | --------- 1 + 0 JOBS APPLIED
+2024-08-14 15:21:17,216 | INFO | --------- 2024-08-14 15:21:17 ||||| 2024-08-14 15:31:17
+2024-08-14 15:22:42,323 | INFO | --------- 0 + 0 JOBS APPLIED
+2024-08-14 15:22:42,323 | INFO | --------- 2024-08-14 15:22:42 ||||| 2024-08-14 15:32:42
+2024-08-14 15:22:54,399 | INFO | --------- 0 + 0 JOBS APPLIED
+2024-08-14 15:22:54,400 | INFO | --------- 2024-08-14 15:22:54 ||||| 2024-08-14 15:32:54
+2024-08-14 15:38:39,609 | INFO | Job 75844d67-f838-4e31-8b89-d6022ee96fae removed from apply queue.
+2024-08-14 15:39:05,672 | INFO | Job 763ee0d8-1116-481b-9a1d-2417c84c9921 removed from apply queue.
+2024-08-14 15:39:14,140 | ERROR | Apply Button not FOUND for 3cf0dba2-482b-4972-897c-2577efedd7e6
+2024-08-14 15:39:14,237 | INFO | Job 3cf0dba2-482b-4972-897c-2577efedd7e6 removed from apply queue.
+2024-08-14 15:39:22,332 | ERROR | Apply Button not FOUND for 982fc869-a0e6-418a-a32e-134a9828d8f1
+2024-08-14 15:39:22,440 | INFO | Job 982fc869-a0e6-418a-a32e-134a9828d8f1 removed from apply queue.
+2024-08-14 15:39:28,187 | ERROR | Apply Button not FOUND for ffeedfe6-bbee-40a0-a187-6f2b5bde5052
+2024-08-14 15:39:28,289 | INFO | Job ffeedfe6-bbee-40a0-a187-6f2b5bde5052 removed from apply queue.
+2024-08-14 15:45:34,158 | INFO | Job ffeedfe6-bbee-40a0-a187-6f2b5bde5052 removed from apply queue.
+2024-08-14 15:46:00,224 | INFO | Job 982fc869-a0e6-418a-a32e-134a9828d8f1 removed from apply queue.
+2024-08-14 15:46:26,428 | INFO | Job 3cf0dba2-482b-4972-897c-2577efedd7e6 removed from apply queue.
+2024-08-14 15:46:28,647 | INFO | Score updated to 3.
+2024-08-14 15:46:28,648 | INFO | --------- 3 + 0 JOBS APPLIED
+2024-08-14 15:46:28,648 | INFO | --------- 2024-08-14 15:46:28 ||||| 2024-08-14 15:56:28
+2024-08-14 15:54:27,242 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723668795340557420'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.19041-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '64ed9835-5a7f-11ef-ba39-b8ca3a95eab0'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-14 15:54:27,611 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '108352'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Wed, 14 Aug 2024 20:53:15 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCBCA31E4E792D"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e5a2edda-501e-001f-288c-ee23ff000000'
+    'x-ms-client-request-id': '64ed9835-5a7f-11ef-ba39-b8ca3a95eab0'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Wed, 14 Aug 2024 20:54:26 GMT'
+2024-08-14 15:54:27,732 | INFO | Blob 1723668795340557420 downloaded to assets/sample1test_dot_it2_at_gmail_dot_com/Python Utsav Chaudhary Resume.pdf
+2024-08-14 15:54:43,312 | INFO | Job 25d7aa8d-ad11-400b-b052-629adc63a696 removed from apply queue.
+2024-08-14 16:00:45,152 | INFO | Job b80e4eda-e741-430f-a7cb-4a5a8734bf9b removed from apply queue.
+2024-08-14 16:01:11,329 | INFO | Job e81f83da-3286-4d3e-a191-af29e2322236 removed from apply queue.
+2024-08-14 16:01:37,144 | ERROR | Apply Button not FOUND for a7005875-7d93-400e-9a5e-1939f7ed9b3b
+2024-08-14 16:01:37,146 | INFO | Job a7005875-7d93-400e-9a5e-1939f7ed9b3b removed from apply queue.
+2024-08-14 16:01:39,354 | INFO | Score updated to 2.
+2024-08-14 16:01:39,354 | INFO | --------- 2 + 0 JOBS APPLIED
+2024-08-14 16:01:39,354 | INFO | --------- 2024-08-14 16:01:39 ||||| 2024-08-14 16:11:39
+2024-08-14 16:03:00,921 | ERROR | Apply Button not FOUND for b80e4eda-e741-430f-a7cb-4a5a8734bf9b
+2024-08-14 16:03:00,923 | INFO | Job b80e4eda-e741-430f-a7cb-4a5a8734bf9b removed from apply queue.
+2024-08-14 16:03:06,813 | ERROR | Apply Button not FOUND for e81f83da-3286-4d3e-a191-af29e2322236
+2024-08-14 16:03:06,815 | INFO | Job e81f83da-3286-4d3e-a191-af29e2322236 removed from apply queue.
+2024-08-14 16:03:32,186 | ERROR | Apply Button not FOUND for a7005875-7d93-400e-9a5e-1939f7ed9b3b
+2024-08-14 16:03:32,188 | INFO | Job a7005875-7d93-400e-9a5e-1939f7ed9b3b removed from apply queue.
+2024-08-14 16:03:34,298 | INFO | --------- 0 + 0 JOBS APPLIED
+2024-08-14 16:03:34,298 | INFO | --------- 2024-08-14 16:03:34 ||||| 2024-08-14 16:13:34
+2024-08-14 16:04:04,550 | ERROR | Apply Button not FOUND for b80e4eda-e741-430f-a7cb-4a5a8734bf9b
+2024-08-14 16:04:04,552 | INFO | Job b80e4eda-e741-430f-a7cb-4a5a8734bf9b removed from apply queue.
+2024-08-14 16:04:10,308 | ERROR | Apply Button not FOUND for e81f83da-3286-4d3e-a191-af29e2322236
+2024-08-14 16:04:10,310 | INFO | Job e81f83da-3286-4d3e-a191-af29e2322236 removed from apply queue.
+2024-08-14 16:04:35,612 | ERROR | Apply Button not FOUND for a7005875-7d93-400e-9a5e-1939f7ed9b3b
+2024-08-14 16:04:35,615 | INFO | Job a7005875-7d93-400e-9a5e-1939f7ed9b3b removed from apply queue.
+2024-08-14 16:06:21,532 | INFO | Job b80e4eda-e741-430f-a7cb-4a5a8734bf9b removed from apply queue.
+2024-08-14 16:07:39,304 | INFO | Job a7005875-7d93-400e-9a5e-1939f7ed9b3b removed from apply queue.

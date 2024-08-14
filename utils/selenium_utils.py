@@ -23,8 +23,8 @@ def clickTheDamnButton(image_name, sleep_time, max_search_time=10, search_interv
         if location is not None:
             center = pyautogui.center(location)
             pyautogui.moveTo(center)
-            pyautogui.click()
             time.sleep(sleep_time)
+            pyautogui.click()
             return True
         else:
             print(f"Still haven't found {image_name}.png...")
