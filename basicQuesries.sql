@@ -1,5 +1,6 @@
 -- select * from allData;
 -- select * from myQueue;
+select * from users;
 select * from applyQueue;
 -- insert into resumeList (resumeId, resumeName, email)
 -- VALUES ('1723493740408406275', 'Python Amit Resume', 'aluhar@gmail.com')

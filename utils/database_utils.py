@@ -95,14 +95,16 @@ def setTheScore(conn, new_score):
     except Exception as e:
         logging.error(f"Error setting score: {e}")
 
-def fetchDiceCreds(conn, email):
+def fetchDiceCreds(email):
+    tempConn = connect_to_database()
     try:
-        cursor = conn.cursor()
-        query = "SELECT id, email, selectedResume, timeOfArrival FROM applyQueue ORDER BY timeOfArrival ASC"
+        cursor = tempConn.cursor()
+        query = f"SELECT dice_password FROM users WHERE email = {email}"
         cursor.execute(query)
-        rows = cursor.fetchall()
-        job_queue = [{'id': row[0], 'email': row[1], 'selectedResume': row[2], 'timeOfArrival': str(row[3])} for row in rows]
+        rows = cursor.fetchall() or None
+        print(rows)
         cursor.close()
-        return job_queue if job_queue else False
+        tempConn.close()
+        return rows
     except Exception as e:
         logging.error(f"Error fetching queue: {e}")
