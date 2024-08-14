@@ -15,8 +15,7 @@ DATABASE_CONFIG = {
 
 CHROME_DRIVER_PATH = os.getenv('CHROME_DRIVER_PATH')
 CHROME_OPTIONS = {
-    'debugger_address': os.getenv('CHROME_DEBUGGER_ADDRESS'),
-    'user_data_dir': os.getenv('CHROME_USER_DATA_DIR')
+    'debugger_address': os.getenv('CHROME_DEBUGGER_ADDRESS')
 }
 
 AZURE_BLOB_CONFIG = {

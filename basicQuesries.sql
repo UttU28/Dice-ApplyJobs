@@ -1,7 +1,8 @@
 -- select * from allData;
 -- select * from myQueue;
-select * from users;
+-- select * from users;
 select * from applyQueue;
+-- SELECT dice_password FROM users WHERE email = 'utsav28.devops@gmail.com';
 -- insert into resumeList (resumeId, resumeName, email)
 -- VALUES ('1723493740408406275', 'Python Amit Resume', 'aluhar@gmail.com')
 -- select * from resumeList;

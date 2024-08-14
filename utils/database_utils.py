@@ -99,12 +99,11 @@ def fetchDiceCreds(email):
     tempConn = connect_to_database()
     try:
         cursor = tempConn.cursor()
-        query = f"SELECT dice_password FROM users WHERE email = {email}"
+        query = f"SELECT dice_password FROM users WHERE email = '{email}'"
         cursor.execute(query)
         rows = cursor.fetchall() or None
-        print(rows)
         cursor.close()
         tempConn.close()
-        return rows
+        return rows[0][0] or None
     except Exception as e:
         logging.error(f"Error fetching queue: {e}")

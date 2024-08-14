@@ -24,7 +24,6 @@ def apply_the_jobs():
     resumeData = fetch_resume_list(conn)
     cleanedJobQueue = cleanTheDamnJobQueue(jobQueue)
     compareBoth(resumeData)
-    # print(cleanedJobQueue)
     thisCounter = 0
 
     for userEmail, userApplyQueue in cleanedJobQueue.items():
@@ -46,7 +45,7 @@ def apply_the_jobs():
                 # print(jobID, selectedResume)
                 resumeName, userDir = getResumeName(selectedResume)
                 try:
-                    apply_status = apply_dice(conn, jobID, resumeName, userDir, driver)
+                    apply_status = apply_dice(jobID, resumeName, userDir, driver)
                     if apply_status == 'applied': thisCounter += 1
                 except Exception as e:
                     logging.error(f"Error applying for job {userEmail} - {jobID}: {e}")
@@ -56,6 +55,7 @@ def apply_the_jobs():
                     # update_the_job(conn, jobID, apply_status)
             
             chrome_app.terminate()
+            driver.quit()
     
     timeForNext = datetime.now() + timedelta(minutes=10)
     print(f"--------- {thisCounter} JOBS APPLIED")
@@ -70,8 +70,7 @@ def apply_the_jobs():
     logging.info(f"--------- {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ||||| {timeForNext.strftime('%Y-%m-%d %H:%M:%S')}")
     conn.close()
 
-def apply_dice(conn, jobID, selectedResume, userDir, thisDriver):
-    print(jobID, selectedResume)
+def apply_dice(jobID, selectedResume, userDir, thisDriver):
     if thisDriver is None:
         logging.critical("CHROME KE MAA CHUD GAI BHAIIIIIIII")
         raise ValueError("Driver is not initialized. Call loadChrome() first.")

@@ -13,6 +13,8 @@ from utils.selenium_utils import initialize_chrome_driver
 from utils.database_utils import *  # Assuming this is where database functions are imported
 from config.config import CHROME_DRIVER_PATH, CHROME_OPTIONS
 
+profileRootDir = "C:/Users/utsav/Desktop/Dice-ApplyJobs/chromeProfiles/"
+
 def getDirName(email):
     replacements = {
         '@': '_at_',
@@ -41,8 +43,7 @@ def cleanTheDamnJobQueue(onThisData):
     return result
 
 def createProfile(ofThis):
-    profile_path = f'C:/Users/utsav/Desktop/Dice-ApplyJobs/chromeProfiles/{getDirName(ofThis)}'
-    driver = initialize_chrome_driver(CHROME_DRIVER_PATH, CHROME_OPTIONS)
+    profile_path = f'{profileRootDir}/{getDirName(ofThis)}'
 
     chrome_app = subprocess.Popen([
         'C:/Program Files/Google/Chrome/Application/chrome.exe',
@@ -50,33 +51,41 @@ def createProfile(ofThis):
         f'--user-data-dir={profile_path}',
         '--start-maximized'
     ])
+    sleep(2)
+    loginDriver = initialize_chrome_driver(CHROME_DRIVER_PATH, CHROME_OPTIONS)
     sleep(4)
 
-    pyautogui.press('tab')
-    sleep(0.5)
+    for _ in range(3):
+        pyautogui.press('tab')
+        sleep(0.5)
     pyautogui.press('enter')
     pyautogui.typewrite('https://www.dice.com/')
     sleep(1)
     pyautogui.press('enter')
     sleep(2)
 
-    driver.get('https://www.dice.com/dashboard/login')
+    loginDriver.get('https://www.dice.com/dashboard/login')
     sleep(2)
 
     dicePassword = fetchDiceCreds(ofThis)
 
-    email_element = driver.find_element_by_xpath('//div[@data-testid="email-input"]')
-    email_element.send_keys(ofThis)
-    password_element = driver.find_element_by_xpath('//div[@data-testid="password-input"]')
-    password_element.send_keys(dicePassword)
-    password_element.send_keys(Keys.RETURN)
+    pyautogui.typewrite(ofThis)
+    sleep(0.5)
+    pyautogui.press('enter')
 
-    sleep(5)
+    sleep(2)
+
+    pyautogui.typewrite(dicePassword)
+    sleep(0.5)
+    pyautogui.press('enter')
+
+    sleep(9)
 
     chrome_app.terminate()
+    loginDriver.quit()
 
 def checkIfChromeProfile(ofThis):
-    profile_path = f"chromeProfiles/{getDirName(ofThis)}"
+    profile_path = f"{profileRootDir}/{getDirName(ofThis)}"
     if not os.path.isdir(profile_path):
         thisChromeApp = subprocess.Popen([
             'C:/Program Files/Google/Chrome/Application/chrome.exe',
