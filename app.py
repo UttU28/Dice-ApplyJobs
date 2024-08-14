@@ -24,7 +24,7 @@ def apply_the_jobs():
     resumeData = fetch_resume_list(conn)
     cleanedJobQueue = cleanTheDamnJobQueue(jobQueue)
     compareBoth(resumeData)
-    print(cleanedJobQueue)
+    # print(cleanedJobQueue)
     thisCounter = 0
 
     for userEmail, userApplyQueue in cleanedJobQueue.items():
@@ -32,21 +32,24 @@ def apply_the_jobs():
             chrome_app = subprocess.Popen([
                 'C:/Program Files/Google/Chrome/Application/chrome.exe',
                 '--remote-debugging-port=9002',
-                '--user-data-dir=C:/chromeDriver/diceApply/'
+                f'--user-data-dir=C:/Users/utsav/Desktop/Dice-ApplyJobs/chromeProfiles/{getDirName(userEmail)}',
+                '--start-maximized'  # Add this argument to start Chrome in maximized mode
             ])
             time.sleep(2)
 
             driver = initialize_chrome_driver(CHROME_DRIVER_PATH, CHROME_OPTIONS)
             
             for job in userApplyQueue:
-                jobID = job['id']
-                selectedResume = resumeData.get(job['selectedResume'])
+                print(job)
+                jobID = job[0]
+                selectedResume = job[1]
+                # print(jobID, selectedResume)
                 resumeName, userDir = getResumeName(selectedResume)
                 try:
                     apply_status = apply_dice(conn, jobID, resumeName, userDir, driver)
-                    thisCounter += 1
+                    if apply_status == 'applied': thisCounter += 1
                 except Exception as e:
-                    logging.error(f"Error applying for job {jobID}: {e}")
+                    logging.error(f"Error applying for job {userEmail} - {jobID}: {e}")
                     apply_status = 'error'
                 finally:
                     remove_from_queue(conn, jobID)

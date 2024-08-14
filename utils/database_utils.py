@@ -94,3 +94,15 @@ def setTheScore(conn, new_score):
         logging.info(f"Score updated to {new_score}.")
     except Exception as e:
         logging.error(f"Error setting score: {e}")
+
+def fetchDiceCreds(conn, email):
+    try:
+        cursor = conn.cursor()
+        query = "SELECT id, email, selectedResume, timeOfArrival FROM applyQueue ORDER BY timeOfArrival ASC"
+        cursor.execute(query)
+        rows = cursor.fetchall()
+        job_queue = [{'id': row[0], 'email': row[1], 'selectedResume': row[2], 'timeOfArrival': str(row[3])} for row in rows]
+        cursor.close()
+        return job_queue if job_queue else False
+    except Exception as e:
+        logging.error(f"Error fetching queue: {e}")

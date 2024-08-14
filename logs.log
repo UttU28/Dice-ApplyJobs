@@ -927,3 +927,98 @@ Response headers:
     'x-ms-server-encrypted': 'REDACTED'
     'Date': 'Tue, 13 Aug 2024 22:58:26 GMT'
 2024-08-13 17:58:27,123 | INFO | Blob 1723586591906099998 downloaded to assets/utsav28_dot_devops_at_gmail_dot_com/Azure Utsav Chaudhary Resume.pdf
+2024-08-13 18:32:22,069 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723586578999306174'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.19041-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '49f3b4db-59cc-11ef-b1a3-b8ca3a95eab0'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 18:32:22,369 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '147274'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Tue, 13 Aug 2024 22:03:01 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCBBE3B2FAA99F"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'db207f24-001e-0012-76d9-edeb2b000000'
+    'x-ms-client-request-id': '49f3b4db-59cc-11ef-b1a3-b8ca3a95eab0'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Tue, 13 Aug 2024 23:32:21 GMT'
+2024-08-13 18:32:22,518 | INFO | Blob 1723586578999306174 downloaded to assets/utsav28_dot_devops_at_gmail_dot_com/AWS Utsav Chaudhary Resume.docx.pdf
+2024-08-13 18:32:22,521 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723586585506819698'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.19041-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '4a38d93b-59cc-11ef-b3d5-b8ca3a95eab0'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 18:32:22,778 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '145247'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Tue, 13 Aug 2024 22:03:07 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCBBE3B6CE4224"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '50d95e5f-401e-002c-55d9-ed7c54000000'
+    'x-ms-client-request-id': '4a38d93b-59cc-11ef-b3d5-b8ca3a95eab0'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Tue, 13 Aug 2024 23:32:22 GMT'
+2024-08-13 18:32:22,918 | INFO | Blob 1723586585506819698 downloaded to assets/utsav28_dot_devops_at_gmail_dot_com/GCP Utsav Chaudhary Resume.pdf
+2024-08-13 18:32:22,921 | INFO | Request URL: 'https://dicestorage02.blob.core.windows.net/resume-data/1723586591906099998'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.21.0 Python/3.8.3 (Windows-10-10.0.19041-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '4a75c200-59cc-11ef-953e-b8ca3a95eab0'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-08-13 18:32:23,205 | INFO | Response status: 206
+Response headers:
+    'Content-Length': '146071'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Tue, 13 Aug 2024 22:03:14 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DCBBE3BA9C6273"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'cbbe5653-e01e-001a-6ed9-edf124000000'
+    'x-ms-client-request-id': '4a75c200-59cc-11ef-953e-b8ca3a95eab0'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Tue, 13 Aug 2024 23:32:22 GMT'
+2024-08-13 18:32:23,346 | INFO | Blob 1723586591906099998 downloaded to assets/utsav28_dot_devops_at_gmail_dot_com/Azure Utsav Chaudhary Resume.pdf
+2024-08-13 18:33:22,767 | ERROR | Apply Button not FOUND for 27345a04-0bfa-4221-aa99-4a12b5a95454
+2024-08-13 18:36:00,774 | ERROR | Apply Button not FOUND for 27345a04-0bfa-4221-aa99-4a12b5a95454
