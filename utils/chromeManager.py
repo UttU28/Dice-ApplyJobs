@@ -64,7 +64,15 @@ def createProfile(ofThis):
     pyautogui.press('enter')
     sleep(2)
 
-    loginDriver.get('https://www.dice.com/dashboard/login')
+    profileChecking = "https://www.dice.com/dashboard/login?redirectURL=/dashboard/profiles" 
+
+    loginDriver.get(profileChecking)
+    sleep(1)
+    print(loginDriver.current_url)
+    exit()
+    if loginDriver.current_url == profileChecking:
+
+    # loginDriver.get('https://www.dice.com/dashboard/login')
     sleep(2)
 
     dicePassword = fetchDiceCreds(ofThis)
