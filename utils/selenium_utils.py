@@ -13,22 +13,26 @@ def initialize_chrome_driver(chrome_driver_path, chrome_options):
     options.add_argument("--disable-notifications")
     return webdriver.Chrome(options=options)
 
-def clickTheDamnButton(image_name, sleep_time, max_search_time=10, search_interval=2):
+def clickTheDamnButton(image_name, sleep_time, max_search_time=15, search_interval=2):
     start_time = time.time()
     screen_width, screen_height = pyautogui.size()
     region = (0, 0, screen_width, screen_height)
     
     while time.time() - start_time < max_search_time:
-        location = pyautogui.locateOnScreen(f'images/{image_name}.png', region=region, confidence=0.8)
-        if location is not None:
-            center = pyautogui.center(location)
-            pyautogui.moveTo(center)
-            time.sleep(sleep_time)
-            pyautogui.click()
-            return True
-        else:
-            print(f"Still haven't found {image_name}.png...")
-            time.sleep(search_interval)
+        try:
+            location = pyautogui.locateOnScreen(f'images/{image_name}.png', region=region, confidence=0.8)
+            if location is not None:
+                center = pyautogui.center(location)
+                pyautogui.moveTo(center)
+                time.sleep(sleep_time)
+                pyautogui.click()
+                print("Exceotion Breako")
+                return True
+            else:
+                print(f"Still haven't found {image_name}.png...")
+                time.sleep(search_interval)
+        except: 
+            print("Exceotion")
 
     logging.error(f"{image_name}.png not found within the time limit.")
     return False

@@ -28,7 +28,7 @@ def apply_the_jobs():
         compareBoth(resumeData)
 
         for userEmail, userApplyQueue in cleanedJobQueue.items():
-            if userEmail == "utsav28.devops@gmail.com": continue
+            # if userEmail == "utsav28.devops@gmail.com": continue
             if userApplyQueue:
                 chromeApp = startChromeProcess(userEmail)
                 time.sleep(2)
@@ -54,7 +54,7 @@ def apply_the_jobs():
                 killChromeProcess(chromeApp)
                 driver.quit()
         
-    timeForNext = datetime.now() + timedelta(minutes=10)
+    timeForNext = datetime.now() + timedelta(minutes=15)
     print(f"--------- {thisCounter} JOBS APPLIED")
     print(f"--------- ENDED AT {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"--------- NEXT AT  {timeForNext.strftime('%Y-%m-%d %H:%M:%S')}")
@@ -77,11 +77,10 @@ def apply_dice(jobID, selectedResume, userDir, thisDriver):
 
     sleep(5)
     try:
-        try: clickTheDamnButton('apply', 2)
-        except: print(1)
-        try: clickTheDamnButton('replaceResume', 2)
-        except: print(2)
-
+        clickTheDamnButton('apply', 2)
+        sleep(3)
+        clickTheDamnButton('replaceResume', 2)
+        sleep(1)
         pyautogui.click()
         sleep(0.8)
         pyautogui.hotkey('ctrl', 'l')
@@ -127,7 +126,7 @@ if __name__ == "__main__":
     # )
     # print(2)
     apply_the_jobs()
-    schedule.every(1).minutes.do(apply_the_jobs)
+    schedule.every(15).minutes.do(apply_the_jobs)
     
     while True:
         schedule.run_pending()

@@ -34,8 +34,8 @@ def remove_from_queue(conn, job_id, email):
     try:
         cursor = conn.cursor()
         query = f"DELETE FROM applyQueue WHERE jobID = '{job_id}' AND email = '{email}'"
-        # cursor.execute(query)
-        # conn.commit()
+        cursor.execute(query)
+        conn.commit()
         cursor.close()
         logging.info(f"Job {job_id} removed from apply queue.")
     except Exception as e:

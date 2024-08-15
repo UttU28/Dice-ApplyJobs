@@ -46,6 +46,8 @@ def checkAndLoginToDice(email, thisDriver):
     profileChecking = "https://www.dice.com/dashboard/login?redirectURL=/dashboard/profiles" 
     sleep(1)
     thisDriver.get(profileChecking)
+    sleep(2)
+    thisDriver.get(profileChecking)
     
     for i in range(3):
         pyautogui.press('esc')
