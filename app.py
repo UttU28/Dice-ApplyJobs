@@ -77,9 +77,9 @@ def apply_dice(jobID, selectedResume, userDir, thisDriver):
 
     sleep(5)
     try:
-        clickTheDamnButton('apply', 2)
+        if not clickTheDamnButton('apply', 2): raise Exception("Shit..")
         sleep(3)
-        clickTheDamnButton('replaceResume', 2)
+        if not clickTheDamnButton('replaceResume', 2): raise Exception("Shit..")
         sleep(1)
         pyautogui.click()
         sleep(0.8)
@@ -105,7 +105,7 @@ def apply_dice(jobID, selectedResume, userDir, thisDriver):
         pyautogui.press(['tab'] * 3)
         pyautogui.press('enter')
         sleep(3.5)
-        clickTheDamnButton('next', 1)
+        if not clickTheDamnButton('next', 2): raise Exception("Shit..")
         location = pyautogui.locateOnScreen('images/submit.png', region=region, confidence=0.8)
         pyautogui.click(location)
         sleep(2)

@@ -1,10 +1,10 @@
 -- select * from allData;
--- select * from myQueue;
 select * from users;
--- select * from allData;
--- 246b456b-2d82-4dbd-8188-bc53c35c916a, 172365841217201568
--- 842f26be-ed93-4857-bb1e-e902a53108e9
--- delete from applyQueue;
+select * from allData;
+select * from resumeList;
+select * from applyQueue;
+select * from scoreBoard;
+
 -- insert into applyQueue(jobID, timeOfArrival, selectedResume, email)
 -- VALUES ('4d192376-adba-4935-9d33-9b71c9762a2d', 1721590222, '1723586578999306174', 'utsav28.devops@gmail.com'),
 -- ('ce1c0a99-c51a-414d-bc8e-72c646ab8f8e', 1721590222, '1723586578999306174', 'utsav28.devops@gmail.com'),
@@ -14,7 +14,6 @@ select * from users;
 -- ('e6022679-fdc0-4159-acaa-ec5f09331a6d', 1721590222, '1723586591906099998', 'utsav28.devops@gmail.com'),
 -- ('c6899560-9f8e-48a8-af9a-309470d28986', 1721590222, '1723586591906099998', 'utsav28.devops@gmail.com'),
 -- ('7bf49866-8db7-4fa4-ad4d-eddf611ce8a0', 1721590222, '1723586591906099998', 'utsav28.devops@gmail.com')
-select * from applyQueue;
 -- DECLARE @currentUnixTimestamp BIGINT;
 -- SET @currentUnixTimestamp = DATEDIFF(SECOND, '1970-01-01T00:00:00Z', GETUTCDATE());
 -- DECLARE @timestamp24HoursAgo BIGINT;
